@@ -1,5 +1,10 @@
 # Entrega_Individual_Algoritmos
 
+
+Ejercicio 9: Media aritmética ponderada
+
+
+
 Ejercicio 10: Área de un triángulo.
 
 #Área de un triángulo
