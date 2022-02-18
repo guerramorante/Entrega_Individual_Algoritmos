@@ -39,3 +39,15 @@ Realización
 
 #Para el triángulo rectángulo se seguiría el mismo procediminto ya que sus catetos son perpendiculares y pueden conformar la base y la altura.
 
+Ejercicio 12: Cuenta de depósito.
+
+#Importe en cuenta
+Entrada
+   i: RACIONAL  #Cantidad de dinero en el banco
+   r: RACIONAL  #Cantidad de dinero a retirar
+Resultado: RACIONAL POSITIVO #La cuenta no puede tener saldo negativo
+
+Precondición 
+    r ≤ i
+Realización
+   Resultado = i - r ≥ 0
