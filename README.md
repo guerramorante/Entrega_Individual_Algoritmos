@@ -2,6 +2,22 @@
 
 Ejercicio 8: Porcentajes, IVA e inversiones.
 
+Entrada
+precio_sin_impuesto: REAL #Precio sin impuesto
+porcentaje_IVA: REAL #Porcentaje de un IVA dado
+
+Resultado
+  TII = precio_sin_impuesto x (1 + porcentaje_IVA)
+
+fin cálculo precio
+
+Entrada 
+capital_invertido: REAL #Cantidad de dinero invertido
+tipo_interés: REAL #Porcentaje de ganancias por tiempo determinado
+tiempo: ENTERO #Tiempo transcurrido (en meses)
+
+Resultado
+   tipo_interes x tiempo/30 x capital principal
 
 Ejercicio 9: Media aritmética ponderada
 
