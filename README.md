@@ -42,6 +42,44 @@ Realización
 #Para el triángulo rectángulo se seguiría el mismo procedimiento ya que sus catetos son perpendiculares y pueden conformar la base y la altura.
 
 Ejercicio 11: Salario y horas extras.
+#Salario_bruto
+#Horas_mensuales
+
+Entrada
+   salario_mensual_bruto: REAL #Importe de salario mensual en bruto
+   horas_extras: ENTERO #Cantidad de horas extras a pagar
+
+precondición
+   salario_mensual_bruto > 0
+   horas_extras ≥ 0
+Invariante
+   cantidad_semanas: ENTERO #Cantidad de semanas de trabajo en este caso 52
+   cantidad_horas_semanales: ENTERO #Cantidad legal de horas de trabajo en este caso 35
+   cantidad_horas_max_1: ENTERO #Umbral de cambio de precio de remuneración en este caso 8
+   precio_1: REAL #Tarifa de remuneración cantidad_horas_max_1 primeras horas extras en este caso 1,25
+   precio_2: REAL #Tarifa de remuneración de las otras horas extras en este caso 1,5
+Variable
+   horas_extra_1: ENTERO #Cantidad de horas extra con precio_1
+   horas_extra_2: ENTERO #Cantidad de horas extra con precio_2
+   precio_hora: REAL #Precio hora de la remunerción bruta básica
+Realización
+   Calcular el precio_hora de la remuneración bruta básica
+Resultado 
+   precio_hora x (inf(horas_extra, cantidad_horas_max_1) x precio_1 + sup(horas_extra - cantidad_max_1, 0) x precio_2)
+
+fin horas_extra
+#Cálculo de la cantidad de horas de cada categoría
+horas_extra_1 = inf(horas_extra, cantidad_horas_max_1)
+horas_extra_2 = sup(horas_extra - cantidad_horas_max_1, 0)
+#Cálculo de la remuneración de las horas extra
+
+
+
+    Resultado ← precio_hora x (horas_ext_1 x PRECIO_1 +
+                               horas_ext_2 x PRECIO_2)
+
+   
+  
 
 
 Ejercicio 12: Cuenta de depósito.
