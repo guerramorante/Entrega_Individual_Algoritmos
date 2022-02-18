@@ -50,6 +50,8 @@ Ejercicio 12: Cuenta de depósito.
 Entrada
    saldo: RACIONAL  #Cantidad de dinero en el banco
    descubierto: RACIONAL  #Cantidad de dinero no suficiente para afrontar un pago
+   retirada_dinero: RACIONAL #Cantidad de dinero a extraer de la cuenta
+   ingreso_dinero: RACIONAL #Cantidad de dinero a ingresar en la cuenta
 Invariante:
    decubierto = 0
    descubierto ≤ saldo
@@ -57,3 +59,34 @@ Precondición
    saldo_inicial ≥ 0
 Postcondición 
    c.descubierto = 0 #El descubierto no está autorizado
+Resultado
+   saldo_inicial - retirada_dinero ≥ 0 #Ya que el descubierto es igual a 0
+   saldo_inicial + ingreso_dinero > 0
+fin CUENTA
+Entrada
+   saldo: RACIONAL  #Cantidad de dinero en el banco
+   descubierto: RACIONAL  #Cantidad de dinero no suficiente para afrontar un pago
+   retirada_dinero: RACIONAL #Cantidad de dinero a extraer de la cuenta
+   ingreso_dinero: RACIONAL #Cantidad de dinero a ingresar en la cuenta
+Precondición
+   saldo_inicial > 0
+   descubierto_MAX ≥ 0
+Poscondición
+   c.descubierto = descubierto_MAX
+   c.saldo = saldo_inicial
+fin CUENTA
+Entrada
+   Tipo_de_cuenta
+    saldo : REAL
+    descubierto : REAL      # Importe del descubierto autorizado 
+    fecha_descubierto : FECHA # Fecha de inicio del último descubierto
+    duración_max : FECHA      # Duración máxima del descubierto
+
+    invariante
+        # El descubierto está autorizado durante un tiempo limitado
+        descubierto ≥ 0
+        fecha_descubierto ≠ 0 => 
+                       fecha_descubierto + duración_max ≤ fecha_actual
+        # el saldo debe ser superior al descubierto autorizado 
+        saldo ≥ descubierto
+fin CUENTA
