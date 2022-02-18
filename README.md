@@ -13,12 +13,13 @@ fin cálculo precio
 
 Entrada 
 capital_invertido: REAL #Cantidad de dinero invertido
-tipo_interés: REAL #Porcentaje de ganancias por tiempo determinado
+tipo_interés: REAL #Porcentaje de la remuneración de la inversión en meses
 tiempo: ENTERO #Tiempo transcurrido (en meses)
 
 Resultado
-   tipo_interes x tiempo/30 x capital principal
+   importe_intereses_generados = (tipo_interes x tiempo) x capital principal
 
+fin cálculo importe_interese_generados
 Ejercicio 9: Media aritmética ponderada
 
 Entrada
