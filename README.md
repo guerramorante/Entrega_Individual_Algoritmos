@@ -80,15 +80,12 @@ Entrada
     saldo: REAL 
     descubierto: REAL # Importe del descubierto autorizado
     fecha_descubierto: FECHA # Fecha de inicio del último descubierto
-
-
-    duración_max : FECHA      # Duración máxima del descubierto
-
+    duración_MAX: FECHA # Duración máxima del descubierto
     invariante
         # El descubierto está autorizado durante un tiempo limitado
         descubierto ≥ 0
-        fecha_descubierto ≠ 0 => 
-                       fecha_descubierto + duración_max ≤ fecha_actual
-        # el saldo debe ser superior al descubierto autorizado 
+        fecha_descubierto ≠ 0
+        fecha_descubierto + duración_max ≤ fecha_actual
+        # El saldo debe der superior al descubierto autorizado
         saldo ≥ descubierto
 fin CUENTA
