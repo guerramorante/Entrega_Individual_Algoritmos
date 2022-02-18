@@ -1,5 +1,7 @@
 # Entrega_Individual_Algoritmos
 
+Ejercicio 8: Porcenyajes, IVA e inversiones.
+
 
 Ejercicio 9: Media aritmética ponderada
 
@@ -37,7 +39,10 @@ Precondición
 Realización
    Resultado = (b x h) / 2
 
-#Para el triángulo rectángulo se seguiría el mismo procediminto ya que sus catetos son perpendiculares y pueden conformar la base y la altura.
+#Para el triángulo rectángulo se seguiría el mismo procedimiento ya que sus catetos son perpendiculares y pueden conformar la base y la altura.
+
+Ejercicio 11: Salario y horas extras.
+
 
 Ejercicio 12: Cuenta de depósito.
 
@@ -51,3 +56,4 @@ Precondición
     r ≤ i
 Realización
    Resultado = i - r ≥ 0
+
