@@ -77,9 +77,11 @@ Poscondición
 fin CUENTA
 Entrada
    Tipo_de_cuenta
-    saldo : REAL
-    descubierto : REAL      # Importe del descubierto autorizado 
-    fecha_descubierto : FECHA # Fecha de inicio del último descubierto
+    saldo: REAL 
+    descubierto: REAL # Importe del descubierto autorizado
+    fecha_descubierto: FECHA # Fecha de inicio del último descubierto
+
+
     duración_max : FECHA      # Duración máxima del descubierto
 
     invariante
