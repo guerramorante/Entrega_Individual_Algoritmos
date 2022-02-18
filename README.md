@@ -21,7 +21,7 @@ Poscondición
    c1 + c2 + c3 = 1
  Realización
     #Cálculo de la media ponderada
-    m= c1 x n1 + c2 x n2 + c3 xn 3
+    m= c1 x n1 + c2 x n2 + c3 x n3
    
    
 Ejercicio 10: Área de un triángulo.
