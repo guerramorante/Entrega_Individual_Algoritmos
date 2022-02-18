@@ -23,7 +23,7 @@ Poscondición
    c1 + c2 + c3 = 1
  Realización
     #Cálculo de la media ponderada
-    m= c1 x n1 + c2 x n2 + c3 x n3
+    m = c1 x n1 + c2 x n2 + c3 x n3
    
    
 Ejercicio 10: Área de un triángulo.
@@ -72,14 +72,28 @@ fin horas_extra
 horas_extra_1 = inf(horas_extra, cantidad_horas_max_1)
 horas_extra_2 = sup(horas_extra - cantidad_horas_max_1, 0)
 #Cálculo de la remuneración de las horas extra
+Resultado
+   precio_hora x (horas_extra_1 x precio_1 + horas_extra_2 x precio_2)
 
+fin cálculo horas_extras
 
+#Cálculo precio hora bruto
+precio_hora_bruto(salario_mensual_bruto: REAL) #Precio bruto correspondiente al salario_mensual_bruto
 
-    Resultado ← precio_hora x (horas_ext_1 x PRECIO_1 +
-                               horas_ext_2 x PRECIO_2)
+Precondición
+    salario_mensual_bruto > 0
 
-   
-  
+Invariante
+    cantidad_semanas: ENTERO #Cantidad de semanas de trabajo, 52 en este caso
+    cantidad_horas_semanas: ENTERO #Cantidad de horas semanales de trabajo legales, 35 en este caso
+
+#Cálculo del precio_hora de la remunerarión bruta base
+Resultado
+   salario_mensual_bruto x 12 / (real(cantidad_horas_semana) x real(cantidad_semanas))
+Postcondición
+  Resultado = salario_mensual_bruto x 12,0 / real(35 x 52)
+
+fin precio_hora_bruto
 
 
 Ejercicio 12: Cuenta de depósito.
