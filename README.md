@@ -48,12 +48,12 @@ Ejercicio 12: Cuenta de depósito.
 
 #Importe en cuenta
 Entrada
-   i: RACIONAL  #Cantidad de dinero en el banco
-   r: RACIONAL  #Cantidad de dinero a retirar
-Resultado: RACIONAL POSITIVO #La cuenta no puede tener saldo negativo
-
-Precondición 
-    r ≤ i
-Realización
-   Resultado = i - r ≥ 0
-
+   saldo: RACIONAL  #Cantidad de dinero en el banco
+   descubierto: RACIONAL  #Cantidad de dinero no suficiente para afrontar un pago
+Invariante:
+   decubierto = 0
+   descubierto ≤ saldo
+Precondición
+   saldo_inicial ≥ 0
+Postcondición 
+   c.descubierto = 0 #El descubierto no está autorizado
