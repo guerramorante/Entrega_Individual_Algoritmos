@@ -1,6 +1,6 @@
 # Entrega_Individual_Algoritmos
 
-Ejercicio 8: Porcenyajes, IVA e inversiones.
+Ejercicio 8: Porcentajes, IVA e inversiones.
 
 
 Ejercicio 9: Media aritmética ponderada
